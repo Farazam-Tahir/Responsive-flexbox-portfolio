@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+header{
+    background: linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%);
+    /* height: 70vh; */
+    max-width: 70%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+.logo{
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: 100;
+    text-shadow: 0px 0px 1px black;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 60%;
+    padding: 30px;
+}
+
+.text{
+    padding: 30px;
+    width: 65%;
+    /* border: 1px solid black; */
+}
+.text p:last-of-type{
+    margin-bottom: 20px;
+    color: gray;
+}
+.ig {
+    position: relative;
+    padding-right: 25px;
+    /* border-top: 20px; */
+    /* border: 1px solid black; */
+}
+.ig img{
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #03087B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.heading-1{
+    font-size: xx-large;
+}
+.heading-2{
+    color: #03087B;
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+.tagline{
+    margin-bottom: 20px;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    list-style-type: square;
+}
+.right >* {
+    width: 30px;
+    height: 25px;
+    margin-bottom: 30px;
+    background-color: #03087B;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 960px) {
+    .nav-items{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+    .text{
+        width: 100%;
+        text-align: justify;
+    }
+    .logo{
+        text-align: center;
+
+    }
+    .logo::after{
+        content: " Tahir ";
+    }
+    .ig{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .ig img{
+        width: 50%;
+    }
+}
